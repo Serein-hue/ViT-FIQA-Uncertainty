@@ -4,7 +4,14 @@
 
 Official implementation of *uncertainty-aware Face Image Quality Assessment (FIQA)* built on top of [ViT-FIQA](https://github.com/jankolf/ViT-FIQA).
 
-> TODO: replace this line with the paper title + arXiv/venue link once the paper is available.
+**Uncertainty-Aware Face Image Quality Assessment via Heteroscedastic Gaussian Modeling and Parameter-Efficient Fine-Tuning**
+
+**Jiateng Guo** <sup>a</sup>, **Keyu Zhu** <sup>a</sup>, **Meilan Jiang** <sup>b,*</sup>
+
+<sup>a</sup> International College, Chongqing University of Posts and Telecommunications, Chongqing 400065, China  
+<sup>b</sup> School of Software Engineering, Chongqing University of Posts and Telecommunications, Chongqing 400065, China
+
+*Submitted to **Displays**.*
 
 This codebase studies **whether a face image quality prediction can be paired with a reliable, sample-dependent uncertainty estimate**. It trains a Vision Transformer backbone (the FR-pretrained ViT from ViT-FIQA) with three quality-prediction variants under identical data, seeds, initialization and fine-tuning scope, and evaluates both **predictive accuracy** and **uncertainty calibration / selective prediction** through a single, fully reproducible pipeline.
 
@@ -165,11 +172,12 @@ The run is complete only when `PIPELINE_COMPLETED.json` exists at the run root. 
 If you find this work useful, please cite:
 
 ```bibtex
-@article{your_paper,
-    author  = {TODO: your authors},
-    title   = {TODO: your paper title},
-    journal = {TODO: venue},
-    year    = {TODO}
+@article{guo2026uncertainty,
+    author  = {Guo, Jiateng and Zhu, Keyu and Jiang, Meilan},
+    title   = {Uncertainty-Aware Face Image Quality Assessment via Heteroscedastic Gaussian Modeling and Parameter-Efficient Fine-Tuning},
+    journal = {Displays},
+    year    = {2026},
+    note    = {Under review}
 }
 ```
 
@@ -194,4 +202,4 @@ This work is based on [ViT-FIQA](https://github.com/jankolf/ViT-FIQA), which in 
 
 This project is released under the [Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/) license, consistent with the ViT-FIQA code it derives from. See `LICENSE` for details.
 
-Copyright (c) 2026 — TODO: your name / affiliation.
+Copyright (c) 2026 Jiateng Guo, Keyu Zhu, Meilan Jiang.
