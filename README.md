@@ -13,6 +13,12 @@ Official implementation of *uncertainty-aware Face Image Quality Assessment (FIQ
 
 *Submitted to **Displays**.*
 
+## Overview
+
+![Block diagram of the proposed uncertainty-aware FIQA framework](architecture.png)
+
+*Figure 1: Block diagram of the proposed network.*
+
 This codebase studies **whether a face image quality prediction can be paired with a reliable, sample-dependent uncertainty estimate**. It trains a Vision Transformer backbone (the FR-pretrained ViT from ViT-FIQA) with three quality-prediction variants under identical data, seeds, initialization and fine-tuning scope, and evaluates both **predictive accuracy** and **uncertainty calibration / selective prediction** through a single, fully reproducible pipeline.
 
 ---
