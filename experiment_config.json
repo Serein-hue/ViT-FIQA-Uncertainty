@@ -1,0 +1,45 @@
+{
+  "paths": {
+    "train_dir": "data/train",
+    "val_dir": "data/val",
+    "test_dir": "data/test",
+    "pretrained_checkpoint": "pretrained_weights/model.pt",
+    "output_root": "outcome",
+    "lfw_dir": "data/lfw"
+  },
+  "training": {
+    "seeds": [2026, 2027, 2028],
+    "epochs": 30,
+    "early_stopping_patience": 7,
+    "batch_size": 64,
+    "num_workers": 0,
+    "backbone_lr": 0.00001,
+    "head_lr": 0.0001,
+    "weight_decay": 0.0001,
+    "warmup_epochs": 5,
+    "gradient_clip_norm": 1.0,
+    "amp": true,
+    "deterministic": true
+  },
+  "model": {
+    "image_size": 112,
+    "patch_size": 9,
+    "embed_dim": 512,
+    "depth": 12,
+    "num_heads": 8,
+    "drop_path_rate": 0.1,
+    "mask_ratio": 0.0,
+    "default_finetune_scope": "top2",
+    "min_log_var": -7.0,
+    "max_log_var": 2.0
+  },
+  "analysis": {
+    "uncertainty_bins": 5,
+    "risk_coverages": [1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2],
+    "prediction_interval_levels": [0.5, 0.8, 0.9, 0.95],
+    "bootstrap_samples": 1000,
+    "attention_samples": 6,
+    "degradation_samples": 60,
+    "run_lfw_if_available": true
+  }
+}

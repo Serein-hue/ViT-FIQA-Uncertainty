@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+.ipynb_checkpoints/
+
+# Data, weights and outputs (never commit these)
+data/
+pretrained_weights/
+outcome/
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.npy
+
+# Logs
+*.log
+
+# Editors / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
