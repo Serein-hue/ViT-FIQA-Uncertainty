@@ -9,7 +9,7 @@ Official implementation of *uncertainty-aware Face Image Quality Assessment (FIQ
 **Jiateng Guo** <sup>a</sup>, **Keyu Zhu** <sup>a</sup>, **Meilan Jiang** <sup>b,*</sup>
 
 <sup>a</sup> International College, Chongqing University of Posts and Telecommunications, Chongqing 400065, China  
-<sup>b</sup> School of Software Engineering, Chongqing University of Posts and Telecommunications, Chongqing 400065, China
+<sup>b</sup> School of Computer Science and Technology, Chongqing University of Posts and Telecommunications, Chongqing 400065, China
 
 *Submitted to **Displays**.*
 
